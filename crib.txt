@@ -22,6 +22,7 @@ git push origin --delete имя-ветки
 5. npm i --save-dev gulp-sass
 6. настраиваем gulpfile.js и работаем соответственно настройкам, напр gulp watch
 
-//gulp autoprefixer
-
-npm install --save-dev gulp-autoprefixer
+//установка gulp autoprefixer в локальный проект
+1. переходим в папку проекта
+2. npm install --save-dev gulp-autoprefixer
+3. настройки в gulpfile.js, для запуска gulp autoprefix
