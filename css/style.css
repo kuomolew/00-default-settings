@@ -38,4 +38,6 @@ body {
     background-color: brown; }
     body header h1 {
       color: cadetblue;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      user-select: none;
+      transition: all .5s; }
