@@ -26,3 +26,8 @@ git push origin --delete имя-ветки
 1. переходим в папку проекта
 2. npm install --save-dev gulp-autoprefixer
 3. настройки в gulpfile.js, для запуска gulp autoprefix
+
+//установка gulp-cssbeautify в локальный проект
+1. переходим в папку проекта
+2. npm install --save-dev gulp-cssbeautify
+3. в gulpfile.js добавил в gulp и gulp watch, для отдельного запуска gulp beautify

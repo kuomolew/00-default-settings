@@ -1,19 +1,1 @@
 @import 'reset';
-
-body {
-    background-color: blueviolet;
-
-    header {
-        background-color: brown;
-
-        h1 {
-            color: cadetblue;
-            box-sizing: border-box;
-            user-select: none;
-            transition: all .5s;
-            background: linear-gradient(to bottom, white, black);
-
-        }
-    }
-
-}
