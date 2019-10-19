@@ -12,3 +12,16 @@ git branch -d имя-ветки
 
 //удалить ветку в облаке
 git push origin --delete имя-ветки
+
+//установка gulp в локальный проект (на компе должны быть установлены node и npm)
+1. переходим в папку проекта
+2. npm list -g --depth=0
+3. npm init
+4. npm i --save-dev gulp
+    //иногда выскакивают ошибки и пакеты не устанавливаются, тогда делаем через sudo и повторяем пункт 4
+5. npm i --save-dev gulp-sass
+6. настраиваем gulpfile.js и работаем соответственно настройкам, напр gulp watch
+
+//gulp autoprefixer
+
+npm install --save-dev gulp-autoprefixer
