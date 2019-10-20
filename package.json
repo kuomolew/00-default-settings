@@ -15,11 +15,11 @@
     "url": "https://github.com/kuomolew/00-default-settings/issues"
   },
   "homepage": "https://github.com/kuomolew/00-default-settings#readme",
-  "description": "",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cssbeautify": "^2.0.0",
     "gulp-sass": "^4.0.2"
-  }
+  },
+  "description": ""
 }
