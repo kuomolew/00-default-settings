@@ -4,7 +4,7 @@ let autoprefixer = require('gulp-autoprefixer');
 let cssbeautify = require('gulp-cssbeautify');
 
 gulp.task("compile", () => {
-  return gulp.src("./css/style.scss")
+  return gulp.src("./css/*.scss")
     .pipe(sass())
     .pipe(gulp.dest((file) => {
       return file.base;

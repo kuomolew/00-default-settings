@@ -1,1 +1,8 @@
-@import 'reset';
+@import '_reset';
+@import '_fonts';
+body {
+    background-color: red;
+}
+span {
+    font-family: 'Open Sans';
+}
