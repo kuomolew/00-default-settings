@@ -1,0 +1,33 @@
+//создание репозитория
+1. создаем новый на гитхаб
+2. git init
+3. git clone адрес репозитория
+
+//создание новой ветки на локалке и пуш в облако
+1. git checkout -b новая-ветка
+2. git push --set-upstream origin новая-ветка
+
+//удалить ветку на локалке
+git branch -d имя-ветки
+
+//удалить ветку в облаке
+git push origin --delete имя-ветки
+
+//установка gulp в локальный проект (на компе должны быть установлены node и npm)
+1. переходим в папку проекта
+2. npm list -g --depth=0
+3. npm init
+4. npm i --save-dev gulp
+    //иногда выскакивают ошибки и пакеты не устанавливаются, тогда делаем через sudo и повторяем пункт 4
+5. npm i --save-dev gulp-sass
+6. настраиваем gulpfile.js и работаем соответственно настройкам, напр gulp watch
+
+//установка gulp autoprefixer в локальный проект
+1. переходим в папку проекта
+2. npm install --save-dev gulp-autoprefixer
+3. настройки в gulpfile.js, для запуска gulp autoprefix
+
+//установка gulp-cssbeautify в локальный проект
+1. переходим в папку проекта
+2. npm install --save-dev gulp-cssbeautify
+3. в gulpfile.js добавил в gulp и gulp watch, для отдельного запуска gulp beautify

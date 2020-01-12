@@ -1,0 +1,118 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans/opensans.woff2") format("woff2"), url("../fonts/opensans/opensans.woff") format("woff"), url("../fonts/opensans/opensans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("../fonts/opensans/opensansitalic.woff2") format("woff2"), url("../fonts/opensans/opensansitalic.woff") format("woff"), url("../fonts/opensans/opensansitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-divider {
+    background-image: url(./src/icons/sprite.png);
+    background-position: -52px 0px;
+    width: 1px;
+    height: 22px;
+}
+
+.icon-fb {
+    background-image: url(./src/icons/sprite.png);
+    background-position: -31px 0px;
+    width: 21px;
+    height: 20px;
+}
+
+.icon-ig {
+    background-image: url(./src/icons/sprite.png);
+    background-position: 0px -20px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-mail {
+    background-image: url(./src/icons/sprite.png);
+    background-position: 0px 0px;
+    width: 31px;
+    height: 20px;
+}
+
+.icon-tel {
+    background-image: url(./src/icons/sprite.png);
+    background-position: -20px -20px;
+    width: 17px;
+    height: 19px;
+}
+
+body {
+    padding-left: 50px;
+}
+
+.test {
+    color: green;
+}

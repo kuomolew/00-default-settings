@@ -1,0 +1,87 @@
+<header>
+        <div class="nav-trigger">
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Item</a>
+            </li>
+            <li>
+                <a href="#">Item</a>
+            </li>
+            <li>
+                <a href="#">Item</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Item</a>
+            </li>
+            <li>
+                <a href="#">Item</a>
+            </li>
+        </ul>
+</header>
+
+.nav-trigger {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+        width: 6.11vw;
+        height: 6.11vw;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform:  translateY(-50%);
+    }
+}
+.burger-line {
+    position: absolute;
+    top: 1.944vw;
+    width: 6.11vw;
+    right: 0;
+    height: 1px;
+    background: #1566a3;
+    transition: .5s all;
+}
+.second, .third{
+    top: 3.054vw
+}
+.third {
+    visibility: hidden;
+}
+.fourth{
+    top: 4.164vw;
+}
+.nav-trigger-active {
+    .first, .fourth {
+        display: none;
+    }
+    .third {
+        visibility: visible;
+    }
+    .second {
+        transform: rotate(45deg);
+    }
+    .third {
+        transform: rotate(-45deg);
+    }
+}
+
+
+/**
+* Main menu show/hide in mobile version
+*/
+$( ".nav-trigger" ).click(function(){ 
+    $( ".header-menu" ).slideToggle();
+    $( ".nav-trigger" ).toggleClass('nav-trigger-active');
+});

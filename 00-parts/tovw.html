@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Flash</title>
+    <style>
+        html {
+    height: 100%;
+    
+}
+body {
+        background-color: #fff;
+    }
+
+li {
+    padding: 20px 20px;
+}
+
+h1 {
+    margin: 100px 0 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+form {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+form input {
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+}
+
+span {
+    color: red;
+}
+    </style>
+</head>
+<body>
+    
+
+    
+    <form id="counter">
+        <h1>In px for small size:</h1>
+        <input type="number" id="px" required>
+        <h1>In px for big size:</h1>
+        <input type="number" id="bigpx" required>
+        <button type="button" onclick="calculate()">Submit</button>
+    </form>
+    
+
+    
+
+    
+    
+    <script>
+    document.getElementById('counter').insertAdjacentHTML("afterend", '<h1>big - <span id="bigvw"></span>vw</h1>');
+    document.getElementById('counter').insertAdjacentHTML("afterend", '<h1>small - <span id="vw"></span>vw</h1>');
+    
+    
+
+    let calculate = function() {
+    let px = document.getElementById('px').value;
+    let bigpx = document.getElementById('bigpx').value;
+    let vw = -1;
+    let bigvw = -1;
+    vw = px * 100 / 360;
+    bigvw = bigpx * 100 / 1920;
+    
+    if (vw>0){
+        document.getElementById('vw').innerText = Math.floor(vw * 100) / 100;
+    }
+    if (vw>0){
+        document.getElementById('bigvw').innerText = Math.floor(bigvw * 100) / 100;
+    }
+    document.getElementById('bigvw').innerText = Math.floor(bigvw * 100) / 100;
+    document.getElementById('vw').innerText = Math.floor(vw * 100) / 100;
+    
+}
+    </script>
+</body>
+</html>
